@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<d>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            width: auto;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .outer {
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+        }
+        .red {
+            background-color: red;
+        }.orange {
+            background-color: orange;
+        }.yellow {
+            background-color: rgb(226, 226, 8);
+        }.green {
+            background-color: green;
+        }.light-blue {
+            background-color: lightskyblue;
+        }.blue {
+            background-color: blue;
+        }.purple {
+            background-color: purple;
+        }
+
+        .internal {
+            width: 200px;
+            height: 200px;
+            opacity: 0;
+            z-index: 1000;
+        }
+
+        .red1:hover {
+            opacity: 1;
+            box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.4);
+            /* transition: opacity 1s linear; */
+        }.orange2:hover {
+            opacity: 1;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        }.yellow3:hover {
+            opacity: 1;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        }.green4:hover {
+            opacity: 1;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        }.light-blue5:hover {
+            opacity: 1;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        }.blue6:hover {
+            opacity: 1;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        }.purple7:hover {
+            opacity: 1;
+            box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+        }
+        span {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+        <div class="outer red">
+            <div class="internal red1"><span>Каждый<span></div>
+        </div>
+        <div class="outer orange">
+            <div class="internal orange2"><span>Охотник</span></div>
+        </div>
+        <div class="outer yellow">
+            <div class="internal yellow3"><span>Желает</span></div>
+        </div>
+        <div class="outer green">
+            <div class="internal green4"><span>Знать</span></div>
+        </div>
+        <div class="outer light-blue">
+            <div class="internal light-blue5"><span>Где</span></div>
+        </div>
+        <div class="outer blue">
+            <div class="internal blue6"><span>Сидит</span></div>
+        </div>
+        <div class="outer purple">
+            <div class="internal purple7"><span>Фазан</span></div>
+        </div>
+</body>
+</html>
